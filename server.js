@@ -8,7 +8,7 @@ const cors = require('cors');
 
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'http://192.168.218.166:3000'], // Allow only frontend to access
+    origin: ['https://digi-bank-backend.onrender.com'], // Allow only frontend to access
     methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allow specific HTTP methods
     credentials: true,  // Allow credentials (cookies, Authorization tokens)
 };
