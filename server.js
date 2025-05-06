@@ -12,7 +12,7 @@ const corsOptions = {
     methods: ['GET', 'POST', 'PUT', 'DELETE'],  // Allow specific HTTP methods
     credentials: true,  // Allow credentials (cookies, Authorization tokens)
 };
-app.options('*', cors(corsOptions));
+app.options(cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
