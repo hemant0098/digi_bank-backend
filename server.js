@@ -13,6 +13,7 @@ const corsOptions = {
     credentials: true,  // Allow credentials (cookies, Authorization tokens)
 };
 app.options(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
